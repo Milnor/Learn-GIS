@@ -34,16 +34,28 @@ activated it.
 ## Assignment Issues
 
 ### Fundamentals of GIS (1 of 4)
-* Assignments 1-3 (ungraded) - smooth sailing, but dull until the last one where 
-you learn the fun part of adding a legend, inset map, etc. and exporting the map 
-to a PDF.
-* Assignment 4 (peer reviewed) - initially the assignment instructions for the 
-*Electoral Politics* assignment were wrong, containing something called *Area 
-Impacted by Wildfire* instead. 
-    - I emailed the UC Davis folks about the problem and though they didn't
-reply, three days later I noticed they had fixed it. Thanks, UC Davis! :grin:
+* Assignments 1-3 (ungraded) - smooth sailing, but dull until the last one where you learn the fun part of adding a legend, inset map, etc. and exporting the map to a PDF.
+* Assignment 4 (peer reviewed) - **California Wildfires**
+    - An earlier version of the class had a different assignment called **Electoral Politics**; it has been replaced with the Wildfires assignment though they haven't caught all the bugs in the courseware:
+        * The instructions mention a quiz you can use to confirm the correctness of your answers; as of Jan. 27, 2024 it has not been implemented
+        * Step 3 refers to the "image below," which is missing
+        * The discussion prompt after the assignment asks questions about the earlier Electoral Politics assignment
+    - This assignment is less complex than assignments 1-3, but is ultimately more difficult because you don't get the step-by-step walkthrough in the instructions
+    - GUI Hints
+        * You can find the following Geoprocessing tools by hitting the "Geoprocessing" button under the "View" menu and then searching for them by name in the "Find Tools" search box:
+            - Dissolve
+            - Intersect
+            - Calculate Geometry
+                * **Don't** use the "Calculate" button from the attribute table if asked to use "Calculate Geometry"
+            - Summary Statistics
+                * This tool will create a table under "Standalone Tables" in the Contents Pane; you can "Open" it, but it has no attribute table
+    - Step 2(f) is easy to mess up, but there is a great discussion in the [course forums](https://www.coursera.org/learn/gis/discussions/forums/PIke4O-YEe2SiAqrlB2yZw/threads/R1W5jLr4Ee6bbwo1s9RgVw) on this part!
+    - I believe (though I'm not certain because the quiz to confirm has not been implemented) that before Step 2(i) they left out something imporant: add another new field to the `Counties` attribute table called `Area_Acres` where you use the "Calculate Geometry" tool again to calculate the total area of each county in *US Survey Acres*. Otherwise, I think you'll get meaningless units for your percentages.
+    - The PDF instructions from Assignment 3 make Steps 4-6 easy; the map is different, but the procedures are the same
+        * The metadata for the `Counties` and `Wildfires` layers will tell you what data sources to credit in Step 4
 
-### GIS Data Formats, Design and Quality
+
+### GIS Data Formats, Design and Quality (2 of 4)
 * Tutorial Assignment 1: Data Structure and File Geodatabase in GIS
     - There was no `Display XY Data` button; instead I had to use `Create Points 
 from Table` > `XY Table to Point`
