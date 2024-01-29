@@ -67,3 +67,9 @@ when I hit `Save`
 * Tutorial Assignment 2: Editing Data - this linked to an official ESRI tutorial
 called [Create points on a map](https://pro.arcgis.com/en/pro-app/latest/get-started/create-points-on-a-map.htm).
     - smooth sailing and a useful skill
+ * Tutorial Assignment 3: A Suitability Analysis
+   - This gives you a **lot** of practice with the **Raster Calculator**
+   - p. 7 "Esri Extensions" is now "ArcGIS Pro Extensions"
+   - p. 8 `nav_dem_10m` wasn't selectable by itself; I had to select `Band_1` inside of it to continue with the directions
+       * later you'll see `nav_dem_10m_Band1` in the Contents pane rather than just `nav_dem_10m`
+   - p. 15 The "Processing Extent" dropdown wasn't obvious like in the screenshot; it was hidden under the "Extent of a Layer" button
